@@ -22,6 +22,7 @@ pipeline
        {
          steps
           {
+          sh 'docker rmi 192.168.10.100:8080/staging/myjava'
           sh 'docker build -t 192.168.10.100:8080/staging/myjava .' 
        
           }
